@@ -14,7 +14,7 @@ RUN buildDeps=" build-base re2c file readline-dev autoconf binutils bison \
         libxml2-dev curl-dev freetype-dev openssl-dev \
         libjpeg-turbo-dev libpng-dev libwebp-dev libmcrypt-dev \
         gmp-dev icu-dev libmemcached-dev linux-headers" \
-    && apk --update add $buildDeps \
+    && apk --update add $buildDeps
 
 RUN apk add \
 	libmemcached-dev \
